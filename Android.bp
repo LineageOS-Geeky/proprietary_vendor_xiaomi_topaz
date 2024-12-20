@@ -15289,23 +15289,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmt@1.3",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libmt@1.3.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libcrypto", "libhardware", "libselinux", "libhidlbase", "libhidltransport", "libkeymasterprovision", "libkeymasterutils", "libkeymasterdeviceutils", "libQSEEComAPI", "vendor.xiaomi.hardware.mtdservice@1.3", "vendor.xiaomi.hardware.mtdservice@1.2", "vendor.xiaomi.hardware.mtdservice@1.1", "vendor.xiaomi.hardware.mtdservice@1.0", "libmisight", "libmlipay@1.1", "vendor.xiaomi.hardware.mlipay@1.1", "libxml2", "libwvkeybox", "liboemcrypto", "libqtikeymaster4", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libteeclientjni",
 	owner: "xiaomi",
 	strip: {
@@ -15383,57 +15366,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so"],
 			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mtdservice@1.1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so"],
-			shared_libs: ["vendor.xiaomi.hardware.mtdservice@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mtdservice@1.2",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so"],
-			shared_libs: ["vendor.xiaomi.hardware.mtdservice@1.1", "vendor.xiaomi.hardware.mtdservice@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mtdservice@1.3",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so"],
-			shared_libs: ["vendor.xiaomi.hardware.mtdservice@1.0", "vendor.xiaomi.hardware.mtdservice@1.1", "vendor.xiaomi.hardware.mtdservice@1.2", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -15993,15 +15925,6 @@ prebuilt_etc_xml {
 	name: "manifest_vendor.xiaomi.hardware.mlipay.xml",
 	owner: "xiaomi",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_vendor.xiaomi.hardware.mtdservice.xml",
-	owner: "xiaomi",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
@@ -17894,23 +17817,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/mlipayd@1.1"],
 			shared_libs: ["vendor.xiaomi.hardware.mlipay@1.0", "vendor.xiaomi.hardware.mlipay@1.1", "vendor.xiaomi.hardware.mtdservice@1.0", "liblog", "libcutils", "libutils", "libQSEEComAPI", "libhidlbase", "libhidltransport", "libmlipay@1.1", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "mtd@1.3",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/mtd@1.3"],
-			shared_libs: ["vendor.xiaomi.hardware.mtdservice@1.3", "libmt@1.3", "liblog", "libutils", "libcutils", "libselinux", "libhidltransport", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
