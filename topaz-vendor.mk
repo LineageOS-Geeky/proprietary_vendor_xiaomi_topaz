@@ -1280,9 +1280,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce@1.0 \
     vendor.qti.ims.rcsuce@1.1 \
     vendor.qti.ims.rcsuce@1.2 \
-    vendor.qti.imsrtpservice@3.0 \
+    vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.imsrtpservice@3.1-service-Impl \
-    vendor.qti.imsrtpservice@3.1 \
+    vendor.qti.imsrtpservice@3.1_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
