@@ -2477,24 +2477,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "consumerir.qcom",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/consumerir.qcom.so"],
-			shared_libs: ["liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "displayfeature.default",
 	owner: "xiaomi",
 	strip: {
@@ -15037,15 +15019,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.ir-service.example.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.radio.config.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.config.xml",
@@ -15472,23 +15445,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "consumerird",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/consumerird"],
-			shared_libs: ["liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "cplay",
 	owner: "xiaomi",
 	target: {
@@ -15736,24 +15692,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti"],
 			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libgps.utils", "liblocation_api", "libbinder_ndk", "libqti_vndfwk_detect_vendor", "libhidlbase", "android.hardware.gnss-V2-ndk", "android.hardware.gnss-aidl-impl-qti", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.ir-service.example",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.ir-service.example"],
-			shared_libs: ["libbase", "libbinder_ndk", "libcutils", "liblog", "libutils", "android.hardware.ir-V1-ndk", "libhardware", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
