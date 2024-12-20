@@ -1276,7 +1276,6 @@ PRODUCT_PACKAGES += \
     misound_res_headphone \
     misound_res_spk \
     com.qualcomm.qti.dpm.api@1.0 \
-    fm_helium \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -1286,7 +1285,6 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
-    libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
     libmmosal \
@@ -1317,7 +1315,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
     vendor.qti.hardware.qccsyshal@1.2-halimpl \
