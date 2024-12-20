@@ -642,7 +642,6 @@ PRODUCT_PACKAGES += \
     displayfeature.default \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
-    sound_trigger.primary.bengal \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
