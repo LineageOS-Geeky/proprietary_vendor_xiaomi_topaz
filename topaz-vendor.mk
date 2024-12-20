@@ -506,10 +506,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.common-V2-ndk \
-    android.hardware.biometrics.fingerprint-V2-ndk \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.media.c2@1.0 \
     btaudio_offload_if \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.truly_cmb433 \
@@ -603,7 +599,6 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
     com.vidhance.node.processing \
-    com.fingerprints.extension@1.0 \
     com.qti.chiusecaseselector \
     com.qti.feature2.anchorsync \
     com.qti.feature2.demux \
@@ -824,7 +819,6 @@ PRODUCT_PACKAGES += \
     libhistogram \
     libhta \
     libidl \
-    libipanat \
     libipebpsstriping \
     libizat_client_api \
     libizat_core \
@@ -875,9 +869,7 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
-    libmediautils_vendor \
     libmemperfd \
-    libmemunreachable \
     libmeters-ns \
     libmeters \
     libmialgo_ai_vision \
@@ -905,7 +897,6 @@ PRODUCT_PACKAGES += \
     libmorpho_Lowlight \
     libmpbase \
     libnative-api \
-    libnetfilter_conntrack \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_datapath_proxy \
@@ -918,7 +909,6 @@ PRODUCT_PACKAGES += \
     libnetmgrmodemproxy \
     libnetmgrportutils \
     libnetmgrxfrmutils \
-    libnfnetlink \
     libnlnetmgr \
     liboemaids_vendor \
     liboemcrypto \
@@ -930,7 +920,6 @@ PRODUCT_PACKAGES += \
     libpal_net_if \
     libpalclient \
     libpasrutils \
-    libpcap \
     libpdmapper \
     libpdnotifier \
     libperfconfig \
@@ -1013,7 +1002,6 @@ PRODUCT_PACKAGES += \
     libqtikeymaster4 \
     libqtikeymint \
     librcc \
-    libreference-ril \
     libreffeature \
     libril-db \
     libril-legacy \
@@ -1291,8 +1279,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
-    vendor.xiaomi.hardware.displayfeature@1.0 \
-    vendor.xiaomi.hardware.fingerprintextension@1.0 \
     libSnpeHtpV68Skel \
     libSnpeHtpV69Skel \
     libadsp_jpege_skel \
@@ -1366,7 +1352,6 @@ PRODUCT_PACKAGES += \
     libmlipay@1.1 \
     libteeclientjni \
     libwvkeybox \
-    vendor.xiaomi.hardware.mlipay@1.0 \
     vendor.xiaomi.hardware.mlipay@1.1 \
     vendor.xiaomi.hardware.mtdservice@1.0 \
     CACertService \
