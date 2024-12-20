@@ -249,7 +249,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
@@ -791,7 +790,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.qti.hardware.wifidisplaysession@1.0-impl \
     vendor.xiaomi.hardware.displayfeature@1.0-impl \
-    vendor.xiaomi.hardware.micharge@1.0-impl \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
@@ -1305,7 +1303,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.displayfeature@1.0 \
     vendor.xiaomi.hardware.fingerprintextension@1.0 \
-    vendor.xiaomi.hardware.micharge@1.0 \
     libSnpeHtpV68Skel \
     libSnpeHtpV69Skel \
     libadsp_jpege_skel \
@@ -1448,7 +1445,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     vendor.qti.memory.pasrmanager@1.0-service.xml \
-    vendor.xiaomi.hardware.micharge@1.0.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     manifest_vendor.xiaomi.hardware.mtdservice.xml \
     ATFWD-daemon \
@@ -1509,7 +1505,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0-service \
     vendor.qti.psiclient@1.0-service \
     vendor.xiaomi.hardware.displayfeature@1.0-service \
-    vendor.xiaomi.hardware.micharge@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
