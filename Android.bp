@@ -3658,6 +3658,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -3675,6 +3676,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -6377,40 +6379,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmialgo_aio_seg.so"],
 			shared_libs: ["liblog", "libmialgo_ai_vision", "libmialgo_utils", "libcdsprpc", "libOpenCL", "libm", "libc++_shared", "libdl", "libc", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmialgo_basic_cdsp_skel",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib64/libmialgo_basic_cdsp_skel.so"],
-			shared_libs: ["libc", "libgcc", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmialgo_mc_bokeh_cdsp_skel",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib64/libmialgo_mc_bokeh_cdsp_skel.so"],
-			shared_libs: ["libc", "libmialgo_basic_cdsp_skel", "libgcc", ],
 		},
 	},
 	compile_multilib: "64",
