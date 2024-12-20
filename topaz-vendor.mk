@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.battery_stats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.battery_stats.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -706,15 +705,9 @@ PRODUCT_PACKAGES += \
     libadsp_default_listener \
     libadsprpc \
     libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libagmmixer \
     libaidenoiser \
     libalLDC \
     libalhLDC \
-    libalsautils \
     libapengine \
     libappclassifier \
     libar-acdb \
@@ -732,7 +725,6 @@ PRODUCT_PACKAGES += \
     libaudio_log_utils \
     libbase64 \
     libbatching \
-    libbatterylistener \
     libbitmlengine \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -799,7 +791,6 @@ PRODUCT_PACKAGES += \
     libesesbprovision \
     libfastcvdsp_stub \
     libfastcvopt \
-    libfmpal \
     libgdtap \
     libgeofencing \
     libgf_ca \
@@ -815,7 +806,6 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr_tm \
-    libhfp_pal \
     libhistogram \
     libhta \
     libidl \
@@ -918,7 +908,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient \
     libpasrutils \
     libpdmapper \
     libpdnotifier \
@@ -1026,7 +1015,6 @@ PRODUCT_PACKAGES += \
     libsi \
     libsilkyscrolls \
     libskewknob \
-    libsndcardparser \
     libsnpe_dsp_domains_v2 \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
@@ -1147,7 +1135,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
     vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.AGMIPC@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
@@ -1189,8 +1176,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.1 \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.pal@1.0-impl \
-    vendor.qti.hardware.pal@1.0 \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
@@ -1401,8 +1386,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor_audio.xml \
     deviceinfo-saidl.xml \
     manifest_android.hardware.drm-service.widevine.xml \
-    manifest_non_qmaa.xml \
-    manifest_non_qmaa_extn.xml \
     qms-saidl.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
@@ -1418,17 +1401,11 @@ PRODUCT_PACKAGES += \
     SoterProvisioningTool \
     adpl \
     adsprpcd \
-    agmcap \
-    agmcompressplay \
-    agmhostless \
-    agmplay \
-    audioadsprpcd \
     battery_stats \
     batterysecret \
     cdsprpcd \
     cnd \
     cnss-daemon \
-    cplay \
     diag-router \
     displayfeature \
     dpmQmiMgr \
