@@ -851,8 +851,6 @@ PRODUCT_PACKAGES += \
     libmeters \
     libmialgo_ai_vision \
     libmialgo_aio_seg \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
     libmialgo_sd \
     libmialgo_utils \
     libmialgoengine \

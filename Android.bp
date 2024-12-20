@@ -6063,40 +6063,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmialgo_basic_cdsp_skel",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib64/libmialgo_basic_cdsp_skel.so"],
-			shared_libs: ["libc", "libgcc", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmialgo_mc_bokeh_cdsp_skel",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib64/libmialgo_mc_bokeh_cdsp_skel.so"],
-			shared_libs: ["libc", "libmialgo_basic_cdsp_skel", "libgcc", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmialgo_sd",
 	owner: "xiaomi",
 	strip: {
