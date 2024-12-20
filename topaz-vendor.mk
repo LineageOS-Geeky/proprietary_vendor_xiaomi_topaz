@@ -755,7 +755,6 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libcert_parse.wpa_s \
-    libcheckpid \
     libchilog \
     libcne \
     libcneapiclient \
