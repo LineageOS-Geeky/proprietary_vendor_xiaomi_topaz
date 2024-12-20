@@ -1328,7 +1328,6 @@ PRODUCT_PACKAGES += \
     libteeclientjni \
     libwvkeybox \
     vendor.xiaomi.hardware.mlipay@1.1 \
-    vendor.xiaomi.hardware.mtdservice@1.0 \
     CACertService \
     CneApp \
     IWlanService \
