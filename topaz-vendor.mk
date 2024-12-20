@@ -1416,7 +1416,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
-    android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.ir-service.example.xml \
     android.hardware.radio.config.xml \
@@ -1465,7 +1464,6 @@ PRODUCT_PACKAGES += \
     hdcp1prov \
     hdcp2p2prov \
     hvdcp_opti \
-    android.hardware.biometrics.fingerprint@2.1-service_lc \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
