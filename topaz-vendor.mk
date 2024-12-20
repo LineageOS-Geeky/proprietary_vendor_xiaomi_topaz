@@ -623,20 +623,6 @@ PRODUCT_PACKAGES += \
     libsns_device_mode_skel \
     libsns_low_lat_stream_skel \
     libasphere \
-    libaudiopreprocessing \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libhapticgenerator \
-    libldnhncr \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libreverbwrapper \
-    libshoebox \
-    libvisualizer \
-    libvolumelistener \
     vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.AGMIPC@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
@@ -654,6 +640,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
     libeai_fixed_32 \
+    libshoebox \
     android.hardware.biometrics.common-V2-ndk \
     android.hardware.biometrics.fingerprint-V2-ndk \
     android.hardware.biometrics.fingerprint@2.1 \
@@ -1171,6 +1158,7 @@ PRODUCT_PACKAGES += \
     sensors.touch.detect \
     sns_client_example \
     libmisoundfx \
+    libvisualizer \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
