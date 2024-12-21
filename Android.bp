@@ -15151,6 +15151,30 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
+	name: "init.kernel.post_boot-bengal-iot",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.kernel.post_boot-bengal-iot.sh",
+	filename: "init.kernel.post_boot-bengal-iot.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.kernel.post_boot-bengal",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.kernel.post_boot-bengal.sh",
+	filename: "init.kernel.post_boot-bengal.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.kernel.post_boot",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.kernel.post_boot.sh",
+	filename: "init.kernel.post_boot.sh",
+	soc_specific: true,
+}
+
+sh_binary {
 	name: "init.qcom.sensors",
 	owner: "xiaomi",
 	src: "proprietary/vendor/bin/init.qcom.sensors.sh",
@@ -15163,6 +15187,30 @@ sh_binary {
 	owner: "xiaomi",
 	src: "proprietary/vendor/bin/init.qti.chg_policy.sh",
 	filename: "init.qti.chg_policy.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.qti.kernel.debug-bengal",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qti.kernel.debug-bengal.sh",
+	filename: "init.qti.kernel.debug-bengal.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.qti.kernel.debug",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qti.kernel.debug.sh",
+	filename: "init.qti.kernel.debug.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.qti.kernel",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qti.kernel.sh",
+	filename: "init.qti.kernel.sh",
 	soc_specific: true,
 }
 
@@ -15810,6 +15858,14 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "vendor_modprobe",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/vendor_modprobe.sh",
+	filename: "vendor_modprobe.sh",
 	soc_specific: true,
 }
 
