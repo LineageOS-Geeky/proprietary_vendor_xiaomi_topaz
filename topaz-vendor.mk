@@ -60,6 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/108_NorthernEurope.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/108_NorthernEurope.png \
@@ -264,6 +265,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/mdss_dsi_panel_m7_38_0c_0b_fhdp_video_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_panel_m7_38_0c_0b_fhdp_video_mi.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/media_khaje_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_khaje_v0/video_system_specs.json \
     vendor/xiaomi/topaz/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/mixer_paths_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_idp.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/mixer_paths_bengal_idp_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_idp_india.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/mixer_paths_bengal_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_qrd.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/mixer_paths_scubaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_scubaidp.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/mixer_paths_scubaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_scubaqrd.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
@@ -297,6 +301,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qdcm_calib_data_m7_38_0c_0a_video_mode_fhdp_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_m7_38_0c_0a_video_mode_fhdp_dsi_panel.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qdcm_calib_data_m7_38_0c_0b_video_mode_fhdp_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_m7_38_0c_0b_video_mode_fhdp_dsi_panel.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/resourcemanager_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_bengal_idp.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/resourcemanager_bengal_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_bengal_qrd.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/resourcemanager_scubaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_scubaidp.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/resourcemanager_scubaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_scubaqrd.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
@@ -412,6 +418,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/tzlog.dict:$(TARGET_COPY_OUT_VENDOR)/etc/tzlog.dict \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/xiaomi/topaz/proprietary/vendor/firmware/a610_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.b00 \
@@ -709,7 +716,6 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libalLDC \
     libalhLDC \
-    libalsautils \
     libapengine \
     libappclassifier \
     libar-acdb \
@@ -1109,8 +1115,19 @@ PRODUCT_PACKAGES += \
     sensors.touch.detect \
     sns_client_example \
     libasphere \
+    libaudiopreprocessing \
+    libbundlewrapper \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libldnhncr \
     libmisoundfx \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libreverbwrapper \
     libvisualizer \
+    libvolumelistener \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -1139,7 +1156,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
     vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.AGMIPC@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
@@ -1182,7 +1198,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.pal@1.0-impl \
-    vendor.qti.hardware.pal@1.0 \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
