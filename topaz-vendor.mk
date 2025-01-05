@@ -192,7 +192,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
@@ -242,7 +241,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.tftp_qmaa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp_qmaa.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/topaz/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
@@ -642,7 +640,6 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
-    displayfeature.default \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     sound_trigger.primary.bengal \
@@ -663,7 +660,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.qti.hardware.wifidisplaysession@1.0-impl \
     vendor.qti.memory.pasrmanager@1.0-impl \
-    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     vulkan.adreno \
     lib-imscommon \
     lib-imsdpl \
@@ -778,9 +774,6 @@ PRODUCT_PACKAGES += \
     libdiagjni \
     libdisp-aba \
     libdisplayconfig.qti \
-    libdisplaydebug \
-    libdisplayfeature \
-    libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
     libdmabufheapfpc \
@@ -809,7 +802,6 @@ PRODUCT_PACKAGES += \
     libgoodixhwfingerprint \
     libgps.utils \
     libgpt \
-    libgpudataproducer \
     libgsl \
     libhdcp1prov \
     libhdcp2p2prov \
@@ -1203,7 +1195,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
     vendor.qti.hardware.qccvndhal@1.0_vendor \
-    vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am-V1-ndk \
@@ -1432,7 +1423,6 @@ PRODUCT_PACKAGES += \
     cnss-daemon \
     cplay \
     diag-router \
-    displayfeature \
     dpmQmiMgr \
     dspservice \
     edgnss-daemon \
@@ -1451,7 +1441,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits@1.2-service \
@@ -1466,12 +1455,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.memory.pasrmanager@1.0-service \
     vendor.qti.psiclient@1.0-service \
-    vendor.xiaomi.hardware.displayfeature@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
     init.qti.chg_policy \
-    init.qti.display_boot \
     init.qti.media \
     init.qti.qcv \
     irsc_util \
