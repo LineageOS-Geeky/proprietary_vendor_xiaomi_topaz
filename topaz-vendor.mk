@@ -15,7 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/topaz/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/topaz/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
-    vendor/xiaomi/topaz/proprietary/system_ext/etc/bluetooth/leaudio_configs.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/leaudio_configs.xml \
     vendor/xiaomi/topaz/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/topaz/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/topaz/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
@@ -90,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_global.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_global_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_global_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india_hdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india_hdr.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_ofilm_gc02m1_macro_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_ofilm_gc02m1_macro_global.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_ofilm_gc02m1_macro_global_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_ofilm_gc02m1_macro_global_thirdparty.xml \
@@ -102,10 +102,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_global.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_global_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_global_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india_hdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india_hdr.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_global.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_global_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_global_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_india.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_india_hdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_india_hdr.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_india_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_qtech_ov13b10_front_india_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_sunny_ov2680_macro_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_sunny_ov2680_macro_global.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_sunny_ov2680_macro_global_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_sunny_ov2680_macro_global_thirdparty.xml \
@@ -114,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_global.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_global_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_global_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_india.xml \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_india_hdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_india_hdr.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_india_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_sunny_s5kjn1_wide_india_thirdparty.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_truly_hi259_macro_global.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_truly_hi259_macro_global.xml \
     vendor/xiaomi/topaz/proprietary/vendor/etc/camera/morpho_lowlight_2.0_truly_hi259_macro_global_thirdparty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight_2.0_truly_hi259_macro_global_thirdparty.xml \
@@ -218,7 +221,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
-    vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
     vendor/xiaomi/topaz/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
@@ -277,6 +279,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/14.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/14.0_config.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/24.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/24.0_config.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/25.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/25.0_config.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/26.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/26.0_config.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/27.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/27.0_config.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/28.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/28.0_config.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/29.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/29.0_config.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/6.0_config.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/7.0_config.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql \
@@ -287,6 +295,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/18_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/18_version_update_ecc_table.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/19_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/19_version_update_ecc_table.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/20_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/20_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/21_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/21_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/22_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/22_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/23_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/23_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/24_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/24_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/25_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/25_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/26_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/26_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/27_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/27_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/28_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/28_version_update_ecc_table.sql \
+    vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/29_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/29_version_update_ecc_table.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql \
     vendor/xiaomi/topaz/proprietary/vendor/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql \
@@ -506,6 +524,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/topaz/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
+    vendor.qti.hardware.fm-V1-ndk \
     btaudio_offload_if \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.truly_cmb433 \
@@ -671,12 +691,9 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
-    libAlacSwDec \
-    libApeSwDec \
     libCB \
     libEvrcSwCodec \
     libFileMux_proprietary \
-    libFlacSwDec \
     libGPMTEEC_vendor \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
@@ -1340,8 +1357,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    vendor.qti.qccsyshal_aidl-V1-ndk \
+    vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     libmlipay \
     libmlipay@1.1 \
@@ -1352,16 +1372,16 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
-    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     AtFwd2 \
     DeviceInfo \
     PowerOffAlarm \
     QCC \
-    QtiTelephony \
     QtiTelephonyService \
     atfwd \
     uceShimService \
+    QtiTelephony \
     WfdService \
     dpmserviceapp \
     ims \
@@ -1399,7 +1419,6 @@ PRODUCT_PACKAGES += \
     qms-saidl.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
-    vendor.qti.hardware.lights.service.xml \
     vendor.qti.hardware.limits-service.xml \
     vendor.qti.hardware.perf.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
@@ -1442,7 +1461,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
-    vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits@1.2-service \
     vendor.qti.hardware.perf-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
